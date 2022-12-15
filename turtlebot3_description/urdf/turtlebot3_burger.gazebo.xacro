@@ -138,6 +138,7 @@
       <always_on>true</always_on>
       <visualize>$(arg camera_visual)</visualize>
       <camera>
+          <!-- <pose>0 0 0 0 0 0</pose> -->
           <horizontal_fov>2.09</horizontal_fov>
           <image>
               <width>640</width>
@@ -153,7 +154,7 @@
         <alwaysOn>true</alwaysOn>
         <updateRate>30.0</updateRate>
         <cameraName>camera</cameraName>
-        <frameName>camera_link</frameName>
+        <frameName>camera_tf_link</frameName>
         <imageTopicName>/image_raw</imageTopicName>
         <cameraInfoTopicName>/camera_info</cameraInfoTopicName>
         <hackBaseline>0.07</hackBaseline>
